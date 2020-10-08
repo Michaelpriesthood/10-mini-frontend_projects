@@ -1,13 +1,13 @@
-const menuBtn = document.querySelector(".menu-btn");
+const openBtn = document.querySelector(".open-btn");
+const closeBtn = document.querySelector(".close-btn");
+const sideNavbar = document.querySelector(".side-nav");
 
-let menuOpen = false;
+// Open the Side-bar
+openBtn.addEventListener("click", () => {
+  sideNavbar.style.width = "250px";
+});
 
-menuBtn.addEventListener("click", () => {
-  if (!menuOpen) {
-    menuBtn.classList.add("open");
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove("open");
-    menuOpen = false;
-  }
+// Close the Side-bar
+closeBtn.addEventListener("click", () => {
+  sideNavbar.style.width = "0";
 });

@@ -1,63 +1,86 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(39, 57, 68);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
-.menu-btn {
-  background-color: #000;
-  width: 70px;
-  height: 70px;
-  border-radius: 10px;
+.navbar {
+  background-color: #063146;
+  height: 60px;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin-top: 8px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  text-decoration: none;
+  color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  transition: all 0.5s ease-in-out;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
 }
 
-.menu-btn .menu-line {
-  height: 3px;
-  width: 50px;
-  background-color: #f4f4f4;
-  transition: all 0.5s ease-in-out;
+.navbar a:hover {
+  background-color: #5f5fbba6;
+  color: #fff;
+  border-radius: 10px;
 }
 
-.menu-btn .menu-line::before,
-.menu-btn .menu-line::after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: 50px;
-  background-color: #f4f4f4;
-  transform: translateY(16px);
-  transition: all 0.5s ease-in-out;
+.side-nav {
+  background-color: rgba(17, 17, 17, 0.911);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: 1;
+  transition: width 0.5s ease;
 }
 
-.menu-btn .menu-line::after {
-  transform: translateY(-16px);
+.side-nav button {
+  background: none;
+  outline: none;
+  border: none;
+  color: #ffffffa4;
+  cursor: pointer;
+  font-size: 2.5rem;
+  float: right;
+  margin: 20px 20px 0 0;
 }
 
-/* Animated the Menu */
-
-.menu-btn.open .menu-line {
-  transform: translateX(-50px);
-  background-color: transparent;
+.side-nav a {
+  display: block;
+  line-height: 65px;
+  margin-top: 50px;
+  color: #ffffffa4;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-.menu-btn.open .menu-line::before {
-  transform: rotate(45deg) translate(35px, -35px);
+.side-nav a:hover,
+.side-nav button:hover {
+  color: #fff;
+  transition: all 0.5s ease-out;
 }
 
-.menu-btn.open .menu-line::after {
-  transform: rotate(-45deg) translate(35px, 35px);
+@media (max-width: 560px) {
+  .navbar ul {
+    display: none;
+  }
 }
