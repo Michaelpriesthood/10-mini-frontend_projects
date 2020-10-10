@@ -9,3 +9,7 @@
 =====================================
 
 | 03 | - Animated User Cards | [Html & Css] |
+
+=====================================
+
+| 04 | - Responsive Pricing Tables | [Html & Css] |
