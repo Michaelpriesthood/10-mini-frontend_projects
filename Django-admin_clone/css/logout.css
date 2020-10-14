@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Global Styles */
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+label,
+.admin {
+  display: block;
+  width: 100%;
+  background: #417690;
+  font-size: 25px;
+  color: #e7d467;
+  padding: 10px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin {
+  background-color: #417690af;
+  color: #f0eee9;
+  font-size: 16px;
+}
+
+.admin:hover,
+.button:hover {
+  text-decoration: underline;
+}
+
+div.info {
+  line-height: 2.5;
+}
+
+div.info h3 {
+  font-weight: normal;
+  font-size: 25px;
+  color: #111111ce;
+  margin-top: 5px;
+}

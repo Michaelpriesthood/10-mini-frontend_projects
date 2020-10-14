@@ -1,15 +1,25 @@
 # 10 Projects with Html, Css & Javascript
 
-| 01 | - Animated Hamburger Menu | [Html, Css & Javascript] |
+1. Animated Hamburger Menu [Html, Css & Javascript]
 
 =====================================
 
-| 02 | - Responsive Side Menu | [Html, Css & Javascript] |
+2. Responsive Side Menu [Html, Css & Javascript]
 
 =====================================
 
-| 03 | - Animated User Cards | [Html & Css] |
+3. Animated User Cards [Html & Css]
 
 =====================================
 
-| 04 | - Responsive Pricing Tables | [Html & Css] |
+4. Responsive Pricing Tables [Html & Css]
+
+=====================================
+
+5. Django Admin Clone [Html & Css]
+
+- All the links in the admin are working links.
+
+=====================================
+
+6.
