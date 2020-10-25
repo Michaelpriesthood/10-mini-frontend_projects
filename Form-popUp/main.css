@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.form-popup {
+  display: none;
+  background: #f4f4f4;
+  height: 350px;
+  padding: 1rem;
+  border: 2px solid rgb(0, 100, 0);
+  border-radius: 10px 10px 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+form {
+  transition: all 1s ease-in;
+}
+
+.form-popup form label {
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+
+.form-popup form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #999;
+  margin-bottom: 15px;
+}
+
+button {
+  background: rgb(0, 100, 0);
+  border: none;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.open-btn {
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.close-btn {
+  background: rgb(255, 0, 0);
+  margin-top: 10px;
+}
