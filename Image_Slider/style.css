@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.slider {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-slides {
+  display: flex;
+  width: 500%;
+  height: 500px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
+.slide.current {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide img {
+  width: 700px;
+  height: 500px;
+}
+
+/* Buttons */
+
+button {
+  position: absolute;
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  color: #000;
+  background: transparent;
+  border-radius: 50%;
+  outline: none;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+button:hover {
+  background: #fff;
+  transition: background 0.5s ease;
+}
+
+button.btn-prev {
+  left: 8px;
+  top: 50%;
+}
+
+button.btn-next {
+  top: 50%;
+  right: 8px;
+}
