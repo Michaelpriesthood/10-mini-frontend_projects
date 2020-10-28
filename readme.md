@@ -30,9 +30,15 @@
 
 ===================================================================================
 
-7. Christmas Countdown - [Html, Css & Javascript]
+8. Christmas Countdown - [Html, Css & Javascript]
 
 - Display a countdown to christmas
   date
 - When Christmas time is reached show a message  
   saying 'Merry Christmas Everybody' and display a flower falling down.
+
+- Display the remaining days on mobile screen
+
+===================================================================================
+
+9. Background Changer - [Html, Css & Javascript]

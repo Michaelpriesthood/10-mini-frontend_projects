@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: 0.5s ease;
+}
+
+#change {
+  background: #111;
+  color: #fff;
+  padding: 18px 13px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+#change:active {
+  transform: scale(0.89);
+}
+
+.color-text {
+  font-size: 14px;
+}
