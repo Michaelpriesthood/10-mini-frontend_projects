@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('./img/bg.jpeg') no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* h1 Styles */
+h1.text-animated,
+div#countdown.animated {
+  text-align: center;
+  font-size: 3rem;
+  background: url('img/text-bg.png') no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveBg 90s linear infinite;
+  -webkit-animation: moveBg 90s linear infinite;
+  margin: 50px;
+}
+
+/* Text Background Animation */
+@keyframes moveBg {
+  0% {
+    background-position: 0% 30%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* ======================================================= */
+/* Countdown Styles */
+div#countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+}
+
+div#countdown div {
+  padding: 20px;
+  border: 1px #fff solid;
+  border-radius: 10px;
+  background: #111;
+  margin: 5px;
+}
+
+div#countdown div:first-child {
+  background: #17a2b8;
+}
+
+div#countdown span {
+  display: block;
+}
+
+@media (max-width: 650px) {
+  div#countdown div {
+    display: none;
+  }
+
+  div#countdown div:first-child {
+    display: block;
+    width: 80%;
+    padding: 10px;
+  }
+}
+
+/* Flower for Christmas */
+.flower {
+  position: fixed;
+  top: -1vh;
+  font-size: 2rem;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}

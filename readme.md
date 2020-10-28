@@ -27,3 +27,12 @@
 ===================================================================================
 
 7. Form PopUp - [Html, Css & Javascript]
+
+===================================================================================
+
+7. Christmas Countdown - [Html, Css & Javascript]
+
+- Display a countdown to christmas
+  date
+- When Christmas time is reached show a message  
+  saying 'Merry Christmas Everybody' and display a flower falling down.
